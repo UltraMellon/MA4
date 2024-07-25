@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  font-family: "Cormorant Garamond";
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* describes navbar */
+#navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(53, 30, 82, 0.377);
+  width: 100%;
+  font-family: "Libre Baskerville", serif;
+  padding: 1rem 0;
+}
+
+#navbar .nav-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+#navbar .nav-list li {
+  margin: 0 2rem;
+}
+
+#navbar .nav-list a {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-style: normal
+}
+
+/* navbar animation */
+#navbar .nav-list a:hover {
+  color: black;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.36);
+  transform: translate3d(3, 5, 6);
+  backface-visibility: hidden;
+  perspective: 10000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* end navbar */
+
+/* homepage */
+.container {
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Align elements along the center baseline */
+  margin-top: 150px; /* Top margin for vertical spacing */
+  width: 80%; /* Container width */
+  background-color: #f0f0f0; /* Just for visual reference */
+  margin: 150px auto; /* Center container horizontally */
+}
+
+.homepage {
+  padding: 0px;
+  border: 2px solid #dad6ff;
+  background-color: rgba(47, 33, 75, 0.356);
+  display: flex;
+  flex-direction:column; /* Stack child elements vertically */
+  width: 100%;
+  align-items: center;
+  font-size: 1.8rem;
+  flex-wrap:wrap;
+}
+
+.homepage .image-container {
+  display:flex;
+  background-color:white;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+  width:fit-content;
+}
+.homepage .image-1, .homepage .image-2, .homepage .image-3 {
+  list-style: none;
+  width:640px;
+  height: 480px;
+  margin-left: 200px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sources {
+  padding: 20px;
+  border: 2px solid rgb(255, 212, 236);
+  background-color: rgb(255, 212, 236);
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+ } /* Space between homepage and sources */
+/* bulleted list */
+.bulleted-list {
+  list-style-type: disc;
+  margin: 80px;
+  font-family: "Cormorant Garamond";
+}
+
+.map-container {
+  display:grid;
+  margin: 150px;
+  list-style-type: none;
+  padding: 20px;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  background-color: silver;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 7.2rem;
+  line-height: rem;
+  color: white;
+  font-weight: 800;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.36);
+}
+
+h2 {
+  text-align: center;
+  font-style: bold;
+ 
+  font-size: 2.8rem;
+  line-height: 2.5em;
+  font-weight: 10000000;
+  color: #2f214b;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFF;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 1.5rem;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 1rem;
+}
+
+.project-tile a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 20px;
+  border: 6px solid #353239;
+  background-color: #353239;
+}
+
+.project-tile p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.36);
+}
+
+img {
+  width: 400px;
+}
+
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-style: italic;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#email {
+  display: inline-block;
+  padding: 20px;
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-style: normal;
+  border: 1px dotted #000000;
+}
+
+#email a {
+  padding: 0 10px;
+  color: #000000;
+}
+
+#email a:hover {
+  color: #000000;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.36);
+}
+
+@media (max-width: 28.75em) {
+  body {
+    font-size: 50%;
+  }
+  nav {
+    flex-direction: row;
+  }
+  ul.nav-list {
+    justify-content: center;
+    margin-right: 0;
+  }
+  ul.nav-list a {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  h1 { 
+    font-size: 3rem;
+  }
+  #projects h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    width: 90%;
+  }
+  .project-tile {
+    flex-direction: column;
+  }
+}
+
+.item-1 {
+  grid-area: Aarush;
+  margin-top: 40%;
+}
+
+.item-2 {
+  grid-area: Milan;
+  margin-top: 15%;
+}
+
+.item-3 {
+  grid-area: Akshay;
+  margin-top: 15%;
+}
+
+.item-4 {
+  grid-area: Ayobami;
+}
+
+.item-5 {
+  grid-area: Alejandro;
+  margin-top: 40px;
+}
+
+.caption1 {
+  grid-area: caption1;
+}
+
+.caption2 {
+  grid-area: caption2;
+}
+
+.caption3 {
+  grid-area: caption3;
+}
+
+.caption4 {
+  grid-area: caption4;
+}
+
+.caption5 {
+  grid-area: caption5;
+}
+
+.aboutUs {
+  align-items: center;
+  list-style-type: none;
+  margin-right: 200px;
+  margin-left: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "Aarush Milan Akshay"
+  "caption1 caption2 caption3"
+  "Ayobami ... Alejandro"
+  "caption4 ... caption5";
+}
+
+.aboutUs .image-container {
+  list-style-type:none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-container img {
+  width: 300px; height: 300px;
+  object-fit: cover;
+  
+}
