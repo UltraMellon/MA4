@@ -272,12 +272,12 @@ p {
 
 .item-2 {
   grid-area: Milan;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .item-3 {
   grid-area: Akshay;
-  margin-top: 15%;
+  margin-bottom: 10px;
 }
 
 .item-4 {
@@ -332,7 +332,6 @@ p {
 
 
 .image-container img {
-  width: 300px; height: 300px;
+  width: 275px; height: 275px;
   object-fit: cover;
-  
 }
